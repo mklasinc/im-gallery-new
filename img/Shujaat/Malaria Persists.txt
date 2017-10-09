@@ -1,0 +1,6 @@
+Name: Malaria Persists
+Author: Shujaat
+Link: http://www.msm622.nyuad.im/MalariaPersists/
+Description:
+
+Mashups project that visualises WHO data about Malaria cases from 2000 onwards.

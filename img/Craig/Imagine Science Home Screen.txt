@@ -1,0 +1,6 @@
+Name: Imagine Science 2015 Home Screen
+Author: Craig
+Link: https://imaginescience.herokuapp.com/
+Description:
+
+Interactive collaborative drawing app built with p5.js and socket.io. What you draw appears instantly on others' screens!

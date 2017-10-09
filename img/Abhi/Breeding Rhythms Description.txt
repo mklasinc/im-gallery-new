@@ -1,0 +1,10 @@
+Name: Breeding Rhythms
+Author: Abhi
+Link: http://breedingrhythms.herokuapp.com/
+Description:
+
+New generations of 8 rhythms each are created based on the rhythms you like.
+
+Like or dislike a rhythm to see the next one.
+
+Submit your favourite rhythms.
