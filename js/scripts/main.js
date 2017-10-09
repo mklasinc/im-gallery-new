@@ -8,6 +8,7 @@ var new_categ_list = [];
 var new_categ_object = {};
 var new_tag_list = [];
 var new_obj_array = [];
+var test_category_bar;
 
 var data_path = '../data/old_projects_data.json';
 
@@ -50,7 +51,7 @@ function loadData(){
     }); //  end of data for each
 
     console.log(new_categ_object);
-    new CategoryBar(new_categ_object);
+    test_category_bar = new CategoryBar(new_categ_object);
     new TagBar(new_categ_object);
   }); //end of getJSON
   
@@ -130,7 +131,7 @@ function applyFilter(filterCategory, filterName){
   $(selector).addClass("toggle-click").find('.x-icon').removeClass('hidden');
 
   //filter
-  $grid.isotope({
+  /*$grid.isotope({
     // filter element with numbers greater than 50
     filter: function() {
       // _this_ is the item element. Get text of element's .number
@@ -146,7 +147,7 @@ function applyFilter(filterCategory, filterName){
       // return true to show, false to hide
       
     }
-  });
+  });*/
 };
 
 function cleartagObjArray(){

@@ -1,5 +1,6 @@
 function CategoryBar(tag_object){
 	var ctg_array = [];
+	this.array = ctg_array;
 	create_ctg_group();
 
 	function create_ctg_group(){
