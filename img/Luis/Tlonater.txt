@@ -1,8 +1,0 @@
-Name: Tlönator
-Author: Luis
-Link: http://www.materialfictions.com/capstone/
-Description:
-
-“Tlönator” is a system that translates texts from English to Tlönized English, a version of English that like the language of Tlön attempts to be executable working in a similar way to programming languages. 
-
-In “Tlön, Uqbar Orbis Tertius”(1940), Jorge Luis Borges proposes an executable language that “is a heterogeneous series of independent acts” which reflects his idea of the fictional world of Tlön — a world that “is successive, temporal, but not spatial.” In this world, nouns are expressed through combinations and accumulations of verbs and adjectives being defined, like objects in programming, by their qualities and actions.

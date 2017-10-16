@@ -1,5 +1,0 @@
-Technology: Digital
-
-Class: Mashups
-
-Custom: Music, Genetic Algorithms
