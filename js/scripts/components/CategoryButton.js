@@ -9,7 +9,7 @@
     this.createDomElement = function(){
       //create HTML string
       var htmlString = '';
-      htmlString += '<li><a class="ctg pink-hover"';
+      htmlString += '<li><a class="ctg not-active"';
       htmlString += 'id=filter-' + this.ctg + '>' + this.capitalizeFirstLetter(this.ctg) + '</a></li>'; 
       $(htmlString).prependTo('#filters');
     };

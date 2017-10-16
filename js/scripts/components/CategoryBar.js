@@ -29,11 +29,11 @@ function CategoryBar(tag_object){
 			console.log(active_ctg);
 			prev_active_button = current_active_button;
 			current_active_button = $(e.target);
-			$(prev_active_button).toggleClass("pink-hover toggle-click");
-			$(".tags").addClass("hidden");
+			$(prev_active_button).removeClass("is-active").addClass("not-active");
+			$(".tags").addClass("not-visible");
 			//make the clicked object appear active
-        	$(current_active_button).toggleClass("pink-hover toggle-click");
-        	$(".tag-" + active_ctg).removeClass("hidden");
+        	$(current_active_button).removeClass("not-active").addClass("is-active");
+        	$(".tag-" + active_ctg).removeClass("not-visible").addClass("is-visible");
 		});
 	}
 

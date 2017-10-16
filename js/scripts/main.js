@@ -10,7 +10,8 @@ var new_tag_list = [];
 var new_obj_array = [];
 var test_category_bar;
 
-var data_path = '../data/old_projects_data.json';
+var data_path = '../data/project_data_all.json';
+//var data_path = '../data/old_projects_data.json';
 
 function loadData(){
 
@@ -150,6 +151,18 @@ function applyFilter(filterCategory, filterName){
   });*/
 };
 
+
+//reduce this
+function applyNoFilter(filterName){
+  var selector = '#filter-' + filterName;
+  //console.log(selector);
+  $(selector).removeClass("toggle-click").find('.x-icon').addClass('hidden');
+  $grid.isotope({
+    // filter element with numbers greater than 50
+    filter: '*'
+  });
+};
+
 function cleartagObjArray(){
   for (var i = 0; i < tagObjArray.length; i++) {
     var tagId = '#filter-' + tagObjArray[i].tag;
@@ -169,24 +182,35 @@ function clearcategObjArray(){
   };
 }
 
-//reduce this
-function applyNoFilter(filterName){
-  var selector = '#filter-' + filterName;
-  //console.log(selector);
-  $(selector).removeClass("toggle-click").find('.x-icon').addClass('hidden');
-  $grid.isotope({
-    // filter element with numbers greater than 50
-    filter: '*'
-  });
-};
+
 
 //method to create a grid with isotope
 function createGrid(){
   $grid = $('#isotopeContainer').isotope({
     itemSelector: '.thumb',
     getSortData: {
-    category:'[data-class]'
-    }
+      category:'[data-class]',
+      semester: function( itemElem) { // function
+        var semester = $( itemElem ).data('semester');
+        var num = 0;
+        //console.log(semester);
+        var arr = semester.split(" ");
+        var year = isNaN(parseInt(arr[1]*3)) ? 0 : parseInt(arr[1]*3); 
+
+        //console.log(year);
+        num += year;
+        if(arr[0].toLowerCase() === 'fall'){
+          num += 2;
+        }else if(arr[0].toLowerCase() === 'spring'){
+          num += 1;
+        }else{
+          num += 0;
+        };
+        return num
+      }
+    },
+    sortBy: 'semester',
+    sortAscending: false
   });
 
   //load isotope images
@@ -202,7 +226,7 @@ function createGrid(){
 $(document).ready(function(){
   console.log('hey there');
 
-  $.getJSON('../data/old_projects_data.json',function(data){
+  $.getJSON(data_path,function(data){
     console.log('we have projects data');
     data.forEach(function(el){
       new Thumbnail(el);

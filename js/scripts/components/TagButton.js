@@ -16,7 +16,7 @@ function TagButton(category,selector){
     this.createDomElement = function(){
       //create HTML string
       var htmlString = '';
-      htmlString += '<li class="tags tag-' + this.ctg + ' hidden" ';
+      htmlString += '<li class="tags tag-' + this.ctg + ' not-visible" ';
       htmlString += 'id="filter-' + this.tag + '">' + this.tag;
       htmlString += '<img src="img/myX.png" class="x-icon hidden"></li>';
       //prepare for event binding
@@ -24,7 +24,7 @@ function TagButton(category,selector){
       //append to DOM, the elements sit in the '#tags-bar container', by default toggle boolean is false
       curObj.element = $(htmlString).data("toggleBool",false).prependTo('#tags-bar');
       //bind events to the element
-      curObj.element.click(function(e){
+      /*curObj.element.click(function(e){
         //get the target****
         var target = $(e.target);
         var parent = target.parent();
@@ -53,7 +53,7 @@ function TagButton(category,selector){
           //set toggle value to false
           target.data("toggleBool",false);
         }
-      });
+      });*/
 
     };
 };
