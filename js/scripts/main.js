@@ -59,7 +59,7 @@ function loadData(){
 }
 
 
-var tagObjArray = [
+/*var tagObjArray = [
   {
     ctg: "class",
     tag: "mashups"
@@ -88,13 +88,13 @@ var tagObjArray = [
     ctg: "custom",
     tag: "music"
   }
-];
+];*/
 
 /*$.getJSON("data/tags-data.json", function(data){
   console.log(data);
 });*/
 
-var ctgList = [];
+/*var ctgList = [];
 
 function findUniqVals(){
   var i = 0;
@@ -112,7 +112,7 @@ function findUniqVals(){
   });
 };
 
-findUniqVals();
+findUniqVals();*/
 
 
 
@@ -120,7 +120,7 @@ findUniqVals();
 
 /*----------TAG FILTERS------------------*/
 
-function applyFilter(filterCategory, filterName){
+/*function applyFilter(filterCategory, filterName){
   //clear everything
   for(var i = 0; i < categTagList.length; i++){
     var hideSelector = '#filter-' + categTagList[i];
@@ -131,25 +131,7 @@ function applyFilter(filterCategory, filterName){
   var selector = '#filter-' + filterName;
   $(selector).addClass("toggle-click").find('.x-icon').removeClass('hidden');
 
-  //filter
-  /*$grid.isotope({
-    // filter element with numbers greater than 50
-    filter: function() {
-      // _this_ is the item element. Get text of element's .number
-        var classFilter = $(this).data(filterCategory);
-        var dataArray = classFilter.split(" ");
-        for(var i = 0; i < dataArray.length; i++){
-          if(dataArray[i] == filterName){
-            return dataArray[i] == filterName;
-        };
-        
-      };
-      //console.log(classFilter);
-      // return true to show, false to hide
-      
-    }
-  });*/
-};
+};*/
 
 
 //reduce this
@@ -163,7 +145,7 @@ function applyNoFilter(filterName){
   });
 };
 
-function cleartagObjArray(){
+/*function cleartagObjArray(){
   for (var i = 0; i < tagObjArray.length; i++) {
     var tagId = '#filter-' + tagObjArray[i].tag;
     //console.log(tagId);
@@ -180,7 +162,7 @@ function clearcategObjArray(){
     $(categId).removeClass("toggle-click").addClass("pink-hover");
     $('#tags-bar').find(tagClass).addClass("hidden");
   };
-}
+}*/
 
 
 
