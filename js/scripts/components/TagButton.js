@@ -23,37 +23,39 @@ function TagButton(category,selector){
       var curObj = this;
       //append to DOM, the elements sit in the '#tags-bar container', by default toggle boolean is false
       curObj.element = $(htmlString).data("toggleBool",false).prependTo('#tags-bar');
-      //bind events to the element
-      /*curObj.element.click(function(e){
-        //get the target****
-        var target = $(e.target);
-        var parent = target.parent();
-
-        //if someone clicks the 'x' next to the tag name, the parent container (i.e. #tags-bar) becomes the target
-        if(target.is("img")){
-          target = parent;
-        };
-
-        //if tag is not active
-        if(target.data("toggleBool") == false){
-          //filter data
-          applyFilter(curObj.ctg, curObj.tag);
-          //set toggle bools of all other tag objects to false
-          for (var i = 0; i < tagArray.length; i++) {
-            var tagID = '#filter-' + tagArray[i].tag; 
-            $(tagID).data("toggleBool",false);  
-          };
-          //set toggle bool of the active object to true
-          target.data("toggleBool",true);
-
-        //if tag is active
-        }else if(target.data("toggleBool") == true){
-          //reset the filter
-          applyNoFilter(curObj.tag);
-          //set toggle value to false
-          target.data("toggleBool",false);
-        }
-      });*/
 
     };
 };
+
+// DEPRECATED
+//bind events to the element
+/*curObj.element.click(function(e){
+  //get the target****
+  var target = $(e.target);
+  var parent = target.parent();
+
+  //if someone clicks the 'x' next to the tag name, the parent container (i.e. #tags-bar) becomes the target
+  if(target.is("img")){
+    target = parent;
+  };
+
+  //if tag is not active
+  if(target.data("toggleBool") == false){
+    //filter data
+    applyFilter(curObj.ctg, curObj.tag);
+    //set toggle bools of all other tag objects to false
+    for (var i = 0; i < tagArray.length; i++) {
+      var tagID = '#filter-' + tagArray[i].tag;
+      $(tagID).data("toggleBool",false);
+    };
+    //set toggle bool of the active object to true
+    target.data("toggleBool",true);
+
+  //if tag is active
+  }else if(target.data("toggleBool") == true){
+    //reset the filter
+    applyNoFilter(curObj.tag);
+    //set toggle value to false
+    target.data("toggleBool",false);
+  }
+});*/

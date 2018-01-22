@@ -4,24 +4,6 @@ var objArray = []; //placeholder for person objects
 
 var r1 = readline.createInterface(process.stdin,process.stdout);
 
-
-/*
-//TEMPLATE
-var x = {
-
-	name: " ",
-	author: " ",
-	link: " ",
-	description: " ",
-	tech: " ",
-	course: " ",
-	custom: [" "],
-	img_url:
-
-};
-pushToArray(x);
-*/
-
 function pushToArray(obj){
 	objArray.push(obj);
 }
@@ -144,9 +126,9 @@ if(!fs.existsSync('projects-data.json')){
 			r1.close();
 		};
 
-		
+
 	});
-	
+
 };
 
 

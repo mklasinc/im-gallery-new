@@ -1,3 +1,6 @@
+// p5.js sketch using portraits of hillary clinton and donald trump moving on the screen
+// used only as background for the showcase prior to the US presidential election in 2016
+
 var rotationangle = 1;
 var rotationspeed = 5;
 var neworiginX = 100;
@@ -44,20 +47,20 @@ function draw (){
   if (neworiginX > width || neworiginX < 0) { //boundary limits
      originspeedX = originspeedX * -1;
      rotationspeed = rotationspeed * -1;
-     
+
   }
-  
-  
+
+
   if (neworiginY > height || neworiginY < 0) { //boundary limits Y
      originspeedY = originspeedY * -1;
      rotationspeed = rotationspeed * -1;
-     
+
   }
   pop();
   push();
 	translate (donneworiginX, donneworiginY);  //location of new coordinate system origin
 	rotate (radians(donrotationangle));
-	imageMode (CENTER); 
+	imageMode (CENTER);
 	image(donnie, 0, 0, 81, 260);
 	donrotationangle = donrotationangle + donrotationspeed;   //movement of rectangle
 	donneworiginX = donneworiginX + donoriginspeedX;
@@ -65,18 +68,17 @@ function draw (){
 	if (donneworiginX > width || donneworiginX < 0) { //boundary limits
 	 donoriginspeedX = donoriginspeedX * -1;
 	 donrotationspeed = donrotationspeed * -1;
-	 
+
 	}
 
 
 	if (donneworiginY > height || donneworiginY < 0) { //boundary limits Y
 	 donoriginspeedY = donoriginspeedY * -1;
 	 donrotationspeed = donrotationspeed * -1;
-	 
+
 	}
 
 
   pop();
-  
-}  
 
+}
