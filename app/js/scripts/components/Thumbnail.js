@@ -1,7 +1,8 @@
 function Thumbnail(project){
 
     //project data
-    this._img_url = 'img/' + project.img[0];
+    // this._img_url = 'img/' + project.img[0];
+    this._img_url = "http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg";
     this._link = project.website_url;
     this._name = project.project_name;
     this._author = project.project_author;
@@ -24,7 +25,7 @@ function Thumbnail(project){
     htmlString += '<div class="overlay-container"> ';
     htmlString += '<div class="overlay-image-container"><img class="img-responsive" src="' + this._img_url + '" alt=""></div>';
     htmlString += '<div class="overlay-container::after"><div class="title-line"><strong>' + this._name + '</strong>  <span class="title-line-author"><br>by ' + this._author + '</span></div>';
-    htmlString += '<div class="meta-line">' + this._semester + '</div></div>'; 
+    htmlString += '<div class="meta-line">' + this._semester + '</div></div>';
     htmlString += '<div class="overlay-box">';
     htmlString += '<a class="overlay-text" href="' + this._link + '" target="_blank">VIEW</a> <div class="overlay-project-name">';
     htmlString += '<p class="font-title">' + this._name + '</p>' ;
@@ -51,8 +52,8 @@ Thumbnail.filter = function(filterCategory,filterName){
               if(dataArray[i] == filterName){
                 return dataArray[i] == filterName; // return true to show, false to hide
             };
-            
-          };     
+
+          };
         }
     });
 
@@ -73,5 +74,5 @@ Thumbnail.filter = function(filterCategory,filterName){
                 }
             }
         }
-        
+
     });*/

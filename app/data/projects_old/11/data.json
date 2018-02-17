@@ -1,0 +1,44 @@
+{
+      "project_name":"Video Feedback Gloves",
+      "project_author":"Andrija Klaric",
+      "descr_short":"Exploring the relationship between a performer and her instrument through feedback",
+      "descr_long":"",
+      "website_url":"",
+      "img":[
+         "Andrija/img.png"
+      ],
+      "video":[
+
+      ],
+      "tags":{
+         "course":"Sensors,Body,Motion",
+         "semester":"Spring 2017",
+         "tech":"Digital",
+         "custom":[
+            "performance"
+         ]
+      },
+      "id":10
+   },
+   {
+      "project_name":"Image That Cannot Be Vandalized",
+      "project_author":"Sebastian Rojas Cabal",
+      "descr_short":"Projection mapping investigating the cult of personality",
+      "descr_long":"",
+      "website_url":"http://intro17spring.nyuad.im/2017/05/14/final-project-an-image-that-cant-be-vandalized/",
+      "img":[
+         "Sebastian/img.png"
+      ],
+      "video":[
+
+      ],
+      "tags":{
+         "course":"Intro to IM",
+         "semester":"Spring 2017",
+         "tech":"Physical",
+         "custom":[
+            "projection mapping"
+         ]
+      },
+      "id":11
+   }

@@ -1,0 +1,23 @@
+{
+      "project_name":"Breeding Rhythms",
+      "project_author":"Abhimanyu Vasishth",
+      "descr_short":"New generations of 8 rhythms each are created based on the rhythms you like",
+      "descr_long":"",
+      "website_url":"http://breedingrhythms.herokuapp.com",
+      "img":[
+         "Abhi/img.png"
+      ],
+      "video":[
+
+      ],
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Digital",
+         "custom":[
+            "genetic algorithms",
+            "music"
+         ]
+      },
+      "id":0
+   }

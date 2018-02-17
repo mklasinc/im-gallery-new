@@ -1,0 +1,26 @@
+{
+      "project_name":"CORNELIUS",
+      "project_author":[
+         "Maddie Moore",
+         "Nada ElAzhary",
+         "Reine Defranco"
+      ],
+      "descr_short":"Animation featuring two little creatures:Cornelius and his best friend, Wendell",
+      "descr_long":"",
+      "website_url":"http://nme247.nyuad.im/Animation%20project/Animation.html",
+      "img":[
+         "Maddie_Nada_Raine/img.png"
+      ],
+      "video":[
+
+      ],
+      "tags":{
+         "course":"other",
+         "semester":"",
+         "tech":"digital",
+         "custom":[
+            "animation"
+         ]
+      },
+      "id":5
+   }

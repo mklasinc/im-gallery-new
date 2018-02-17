@@ -1,0 +1,128 @@
+{"all_projects":[
+  {
+      "title": "Lumarca Building Workshop",
+      "authors":["Miha Klasinc","Arantza Rodriguez","Davis Teague","Mari Calderon"],
+      "description":{
+        "short":"Community-based construction of a 3-dimensional projection display",
+        "long":"long description(1 paragraph, max 2)"
+      },
+      "website":"https://www.myportfolio.com/lumarca/",
+      "images":["thumbnail_photo.jpg","second_phot.png","third_photo.jpg"],
+      "video":"https://vimeo.com/user12345",
+      "tags":{
+         "course":"Intro to IM",
+         "semester":"Spring 2018",
+         "tech":"Physical",
+         "custom":["projection mapping","workshop"]
+      }
+  },
+
+  {
+      "title": "Breeding Rhythms",
+      "authors":["Abhimanyu Vasishth"],
+      "description":{
+        "short":"New generations of 8 rhythms each are created based on the rhythms you like.",
+        "long":""
+      },
+      "website":"http://breedingrhythms.herokuapp.com",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Digital",
+         "custom":["music", "genetic-algorithms"]
+      }
+  },
+
+  {
+      "title": "Imagine Science 2015 Home Screen",
+      "authors":["Craig Protzel"],
+      "description":{
+        "short":"Interactive collaborative drawing app built with p5.js and socket.io",
+        "long":""
+      },
+      "website":"https://imaginescience.herokuapp.com",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Digital",
+         "custom":["music", "genetic-algorithms"]
+      }
+  },
+
+  {
+      "title": "Tlönator",
+      "authors":["Luis Morales Navarro"],
+      "description":{
+        "short":"“Tlönator” is a system that translates texts from English to Tlönized English",
+        "long":""
+      },
+      "website":"http://www.materialfictions.com/capstone/",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Mixed",
+         "custom":["capstone"]
+      }
+  },
+
+  {
+      "title": "Malaria Persists",
+      "authors":["Shujaat Mirza"],
+      "description":{
+        "short":"Mashups project that visualises WHO data about Malaria cases from 2000 onwards.",
+        "long":""
+      },
+      "website":"http://www.msm622.nyuad.im/MalariaPersists",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Digital",
+         "custom":["data-visualization"]
+      }
+  },
+
+  {
+      "title": "CONCRÈTE",
+      "authors":["Fah Daengdej"],
+      "description":{
+        "short":"Paper interface DIY kit that aims to foster creative ways of noticing everyday sounds’ musical and narrative potential.",
+        "long":""
+      },
+      "website":"http://cargocollective.com/musique-concrete",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Other",
+         "semester":"Fall 2015",
+         "tech":"Physical",
+         "custom":["capstone"]
+      }
+  },
+
+  {
+      "title": "CORNELIUS",
+      "authors":["Maddie Moore", "Nada ElAzhary", "Reine Defranco"],
+      "description":{
+        "short":"Animation featuring two little creatures:Cornelius and his best friend, Wendell",
+        "long":""
+      },
+      "website":"http://cargocollective.com/musique-concrete",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Communications Lab",
+         "semester":"Spring 2016",
+         "tech":"Digital",
+         "custom":["animation"]
+      }
+  }
+]
+}

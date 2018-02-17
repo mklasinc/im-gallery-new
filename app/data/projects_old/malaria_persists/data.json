@@ -1,0 +1,22 @@
+{
+     "project_name":"Imagine Science 2015 Home Screen",
+     "project_author":"Craig Protzel",
+     "descr_short":"Interactive collaborative drawing app built with p5.js and socket.io",
+     "descr_long":"",
+     "website_url":"https://imaginescience.herokuapp.com",
+     "img":[
+        "Craig/img.png"
+     ],
+     "video":[
+
+     ],
+     "tags":{
+        "course":"other",
+        "semester":"Fall 2015",
+        "tech":"Digital",
+        "custom":[
+
+        ]
+     },
+     "id":1
+  }

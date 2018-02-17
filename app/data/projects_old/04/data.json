@@ -1,0 +1,23 @@
+{
+      "project_name":"Malaria Persists",
+      "project_author":"Shujaat Mirza",
+      "descr_short":"Mashups project that visualises WHO data about Malaria cases from 2000 onwards.",
+      "descr_long":"",
+      "website_url":"http://www.msm622.nyuad.im/MalariaPersists",
+      "img":[
+         "Shujaat/img.png"
+      ],
+      "video":[
+
+      ],
+      "tags":{
+         "course":"Mashups",
+         "semester":"Fall 2015",
+         "tech":"Digital",
+         "custom":[
+            "data visualization",
+            "health"
+         ]
+      },
+      "id":3
+   }
