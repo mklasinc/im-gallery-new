@@ -11,7 +11,7 @@ body{
 }
 
 a{
-  color: black;   
+  color: black;
 }
 
 #page-title a:hover{
@@ -45,73 +45,13 @@ ul li{
     z-index: 100;
 }
 
-#my-canvas {
-    width:100vw;
-    height:100vh;
-    /*background-color: blue;*/
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: -100;
+#content-wrapper{
+  padding: 15px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.mobile-back-button{
-    z-index: 1000;
-    /* color: black; */
-    background: black;
-    /* background-color: gainsboro; */
-    width: 8vh;
-    height: auto;
-    top: 3vh;
-    position: absolute;
-    right: 3vh;
-    padding: 8px;
-}
 
-.mobile-view{
-  font-size: 2.5em;
-  padding:5px;
-  background:white;
-  /*margin-left: -2vw;*/
-}
-
-.mobile-proj-authors{
-  font-size: 1em;
-  line-height: 2em !important;
-}
-
-.mobile-proj-title{
-    margin: 0;
-    font-size: 2em;
-    /* width: 25vw; */
-    /* padding: 5px; */
-    /*background: white;*/
-}
-
-.mobile-image {
-    margin: -20px;
-    opacity: 0.9;
-    /* width: 100vw; */
-    max-width: 102vw;
-    margin-bottom: 1vh;
-}
-
-.mobile-proj-description{
-    width:94vw;
-    font-size: 1.3em;
-    margin-bottom: 2vh;
-    /*margin-top: 5vh;*/
-}
-
-.mobile-proj-name{
-  margin: 0vh 0 3vh 0;
-  width:75vw;
-}
-
-.mobile-proj-name p{
-  margin:0;
-  line-height: 1em;
-}
 /*---------MOBILE----------------*/
 .full-screen-overlay{
   /*visibility:hidden;*/
@@ -174,14 +114,6 @@ a.pink-hover:hover{
   background-color:pink;
 }
 
-/*.toggle-click{
-  background-color: purple !important;
-  color:white !important;
-  font-weight: bolder;
-}*/
-
-
-
 .ctg.is-active,.tags.is-active{
   background-color: purple !important;
   color:white !important;
@@ -210,19 +142,6 @@ a.pink-hover:hover{
 
 .tags:hover{
   cursor:pointer;
-}
-
-
-/*.thumbnail{
-	overflow: hidden;
-}*/
-
-/*.thumb{
-    transition: background 0.4s, box-shadow 0.4s;
-}*/
-
-#myNav{
-    /*width: 100vw;*/
 }
 
 .container.navCenter{
@@ -263,9 +182,6 @@ a.pink-hover:hover{
 .hidden{
   display:none;
 }
-
-
-
 
 .overlay-project-name,.overlay-project-description, .overlay-project-tags{
     display: block;
@@ -321,6 +237,7 @@ a.pink-hover:hover{
   text-align: center;
   cursor: default;
   max-height: 233px;
+  margin-bottom: 0;
 }
 
 .overlay-container .overlay-box {
@@ -362,6 +279,7 @@ a.pink-hover:hover{
 }
 
 .title-line{
+    max-width: 75%;
     padding-top: 5px;
     text-align: left;
     float: left;
@@ -383,7 +301,12 @@ a.pink-hover:hover{
   max-height: 233px;
 }
 
+.thumb {
+    margin-bottom: 100px;
+}
 
+footer {
+    margin: 50px 0;
 
 .overlay-container a.overlay-text {
     font-size: 1.2em;

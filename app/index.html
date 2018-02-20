@@ -22,34 +22,31 @@
 </head>
 
 <body>
-    <div id="overlays"></div>
+    <!-- <div id="overlays"></div> -->
+  <div id="content-wrapper">
+    <header>
+      <div id="page-title"><a class="underline" href="http://nyuad.im" target="_blank">IM</a> PROJECTS GALLERY</div>
+    </header>
 
-    <div id="page-title"><a class="underline" href="http://nyuad.im" target="_blank">IM</a> PROJECTS GALLERY</div>
+    <nav>
 
-    <div id="rule" class="container myGrid">
-
-        <div id="interface">
-            <div id="sort-bar">
-                <ul id="filters"></ul>
-                <ul id="sorts">
-                    <li><a class="pink-hover" id="filter-random">Yolo</a></li>
-                    <li><a class="pink-hover" id="filter-none">All</a></li>
-                </ul>
-            </div>
-            <ul id="tags-bar"></ul>
+        <div id="sort-bar">
+            <ul id="filters"></ul>
+            <ul id="sorts">
+                <li><a class="pink-hover" id="filter-random">Yolo</a></li>
+                <li><a class="pink-hover" id="filter-none">All</a></li>
+            </ul>
         </div>
+        <ul id="active-tags-bar"></ul>
+    </nav>
 
-        <div id="isotopeContainer">
+    <section id="gallery-container"></section>
 
-            <div class="row"></div>
-        </div>
-    </div>
-
-    </div>
+  </div>
 
     <!-- scripts -->
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/bootstrap.js"></script>
+    <!-- <script src="js/vendor/bootstrap.js"></script> -->
     <script src="js/vendor/isotope.pkgd.js"></script>
     <script src="js/vendor/imagesLoaded.pkgd.min.js"></script>
     <script src="js/scripts/components/Thumbnail.js"></script>
@@ -57,7 +54,7 @@
     <script src="js/scripts/components/TagBar.js"></script>
     <script src="js/scripts/components/CategoryButton.js"></script>
     <script src="js/scripts/components/CategoryBar.js"></script>
-    <script src="js/scripts/mobileHTML.js"></script>
+    <!-- <script src="js/scripts/mobileHTML.js"></script> -->
     <script src="js/scripts/load.js"></script>
     <script src="js/scripts/main.js"></script>
 

@@ -22,7 +22,8 @@ function TagButton(category,selector){
       //prepare for event binding
       var curObj = this;
       //append to DOM, the elements sit in the '#tags-bar container', by default toggle boolean is false
-      curObj.element = $(htmlString).data("toggleBool",false).prependTo('#tags-bar');
+      curObj.element = $(htmlString).data("toggleBool",false).prependTo('#active-tags-bar');
+      // curObj.element = $(htmlString).data("toggleBool",false).prependTo('#sort-bar::after');
 
     };
 };

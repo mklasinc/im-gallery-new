@@ -123,6 +123,95 @@
          "tech":"Digital",
          "custom":["animation"]
       }
+  },
+
+  {
+      "title": "Consciousness",
+      "authors":["Batu Aytemiz","Sugandha Shukla","Jennifer Ziyuan Huang"],
+      "description":{
+        "short":"What happens inside the brain of a comatose patient?",
+        "long":""
+      },
+      "website":"",
+      "images":["01.jpg"],
+      "video":"https://www.youtube.com/watch?v=ipm-BBCupm0",
+      "tags":{
+         "course":"Politics of Code",
+         "semester":"Spring 2017",
+         "tech":"Mixed",
+         "custom":["virtual reality"]
+       }
+  },
+
+  {
+      "title": "How Does a Scientist Look Like?",
+      "authors":["Yana Chalaya"],
+      "description":{
+        "short":"User-generated drawing gallery investigating gender stereotypes in STEM",
+        "long":""
+      },
+      "website":"http://104.131.2.41/project.html",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Politics of Code",
+         "semester":"Fall 2016",
+         "tech":"Digital",
+         "custom":[""]
+       }
+  },
+
+  {
+      "title": "Paid Grade",
+      "authors":["Yana Chalaya"],
+      "description":{
+        "short":"Web app collecting reports about corruption in the academia",
+        "long":""
+      },
+      "website":"http://104.131.2.41/paidGrade/public/",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+        "course":"Politics of Code",
+        "semester":"Fall 2016",
+         "tech":"Digital",
+         "custom":["data visualization"]
+       }
+  },
+
+  {
+      "title": "Video Feedback Gloves",
+      "authors":["Andrija Klaric"],
+      "description":{
+        "short":"Exploring the relationship between a performer and her instrument through feedback",
+        "long":""
+      },
+      "website":"",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Sensors, Body, Motion",
+         "semester":"Fall 2016",
+         "tech":"Mixed",
+         "custom":["data visualization"]
+       }
+  },
+
+  {
+      "title": "Image That Cannot Be Vandalized",
+      "authors":["Sebastian Rojas Cabal"],
+      "description":{
+        "short":"Projection mapping investigating the cult of personality",
+        "long":""
+      },
+      "website":"http://intro17spring.nyuad.im/2017/05/14/final-project-an-image-that-cant-be-vandalized/",
+      "images":["01.jpg"],
+      "video":"",
+      "tags":{
+         "course":"Introduction to Interactive Media",
+         "semester":"Spring 2017",
+         "tech":"Physical",
+         "custom":["projection mapping"]
+       }
   }
-]
-}
+]}

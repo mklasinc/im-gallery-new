@@ -6,7 +6,6 @@ function CategoryBar(tag_object){
 	function create_ctg_group(){
 		for(var ctg in tag_object){
 			ctg_array.push(new CategoryButton(ctg));
-	    	//ctgObj.createDomElement();
 		};
 		console.log('this is our ctg array',ctg_array);
 		create_ctg_buttons();

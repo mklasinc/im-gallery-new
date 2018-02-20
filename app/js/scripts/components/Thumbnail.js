@@ -1,40 +1,59 @@
 function Thumbnail(project){
 
     //project data
+    // let project = d;
+    // project.
+    // project.images[0] = project.images[0] || "http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg";
     // this._img_url = 'img/' + project.img[0];
-    this._img_url = "http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg";
-    this._link = project.website_url;
-    this._name = project.project_name;
-    this._author = project.project_author;
-    this._tagline = project.descr_short;
-    this._semester = project.tags.semester;
-    this._class = project.tags.course;
+    project.images[0] = "http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg";
+      // this._img_url = "http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg";
+      // this._link = project.website_url;
+      // this._title = project.project_name;
+      // this._author = project.authors;
+      // this._tagline = project.description.short;
+      // this._short_descr = project.description.short;
+      // this._semester = project.tags.semester;
+      // this._class = project.tags.course;
 
-    // collection of category keys and category values
-    //for each category, attach a data property to the metadata string (to be appended to the html string)
-    var tag_keys = Object.keys(project.tags);
-    var tag_values = Object.values(project.tags);
-    var metadata_string = '';
-    tag_keys.forEach(function(e,i){
-        metadata_string += 'data-' + e + '="' + tag_values[i] + '" ';
-    });
+    function create_metadata_string(tag_obj){
+      var tag_keys = Object.keys(tag_obj);
+      var tag_values = Object.values(tag_obj);
+      var string = '';
+      tag_keys.forEach(function(e,i){
+          string += 'data-' + e + '="' + tag_values[i] + '" ';
+      });
+      return string;
+    }
+
+    function create_image_element(src){
+      var $img = $('<img class="img-responsive" src="'+ src +'" alt=""/>');
+
+      $img.on('load', function(e){
+          console.log("great");
+      }).on('error', function(e) {
+        console.log("not found!");
+          $img = $('<img class="img-responsive" src="http://gbchope.com/wp-content/uploads/2016/10/events-placeholder.jpg" alt=""/>');
+      });
+      return $img;
+    };
 
   //create HTML elements
+  function create_html_element(){
     var htmlString = '';
     htmlString = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 thumb" ' + metadata_string + ' >';
     htmlString += '<div class="overlay-container"> ';
-    htmlString += '<div class="overlay-image-container"><img class="img-responsive" src="' + this._img_url + '" alt=""></div>';
-    htmlString += '<div class="overlay-container::after"><div class="title-line"><strong>' + this._name + '</strong>  <span class="title-line-author"><br>by ' + this._author + '</span></div>';
-    htmlString += '<div class="meta-line">' + this._semester + '</div></div>';
-    htmlString += '<div class="overlay-box">';
-    htmlString += '<a class="overlay-text" href="' + this._link + '" target="_blank">VIEW</a> <div class="overlay-project-name">';
-    htmlString += '<p class="font-title">' + this._name + '</p>' ;
-    htmlString += '<p>by ' + this._author + '</p> </div>';
-    htmlString += '<div class="overlay-project-description">' + this._tagline + '</div>';
-    //htmlString += '<div class="overlay-project-tags">' + project.hashtag + '</div>';
+    htmlString += '<div class="overlay-image-container"><img class="img-responsive" src="' + project.images[0] + '" alt=""/></div>';
+    // htmlString += '<div class="overlay-image-container">'+ create_image_element(project.images[0]) + '</div>';
+    htmlString += '<div class="overlay-container::after"><div class="title-line"><strong>' + project.title + '</strong>  <span class="title-line-author"><br>by ' + project.authors + '</span></div>';
+    htmlString += '<div class="meta-line">' + project.tags.semester + '</div></div>';
     htmlString += '</div> </div>';
 
-    $(htmlString).appendTo('.row');
+    $(htmlString).appendTo('#gallery-container');
+  }
+
+  var metadata_string = create_metadata_string(project.tags);
+  create_html_element();
+
 
 };
 
@@ -58,21 +77,3 @@ Thumbnail.filter = function(filterCategory,filterName){
     });
 
 };
-
-
-//DEPRECATED
-    /*tag_keys.forEach(function(e,i){
-        if(typeof e !== "object"){
-            metadata_string += 'data-' + e + '="' + tag_values[i] + '" ';
-        }else{
-            metadata_string += 'data-';
-            for(var j = 0; j < tag_values[i].length; j++){
-                console.log('this is an array value',tag_values[i][j]);
-                metadata_string += tag_values[i][j];
-                if(j < project.custom.length - 1){
-                    metadata_string += ' ';
-                }
-            }
-        }
-
-    });*/

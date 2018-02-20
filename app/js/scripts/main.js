@@ -10,7 +10,7 @@ var new_tag_list = [];
 var new_obj_array = [];
 var test_category_bar;
 // var data_path = '../data/project_data_all.json';
-var index_path = '../../data/projects_new/index.json';
+var index_path = '../../data/projects/';
 
 
 
@@ -27,15 +27,14 @@ function applyNoFilter(filterName){
 
 //method to create a grid with isotope
 function createGrid(){
-  $grid = $('#isotopeContainer').isotope({
+  $grid = $('#gallery-container').isotope({
     itemSelector: '.thumb',
     getSortData: {
       category:'[data-class]',
       semester: function( itemElem) { // function
-        var semester = $( itemElem ).data('semester');
+        var semester_string = $( itemElem ).data('semester');
         var num = 0;
-        //console.log(semester);
-        var arr = semester.split(" ");
+        var arr = semester_string.split(" ");
         var year = isNaN(parseInt(arr[1]*3)) ? 0 : parseInt(arr[1]*3);
 
         //console.log(year);
@@ -65,21 +64,10 @@ function createGrid(){
 /*----------------------------*/
 /*----------------------------*/
 $(document).ready(function(){
-  // console.log('hey there');
-  // my_load.load_data(data_path);
+
   my_data.load_data_from_index(index_path);
-
-  // $.getJSON(data_path,function(data){
-  //   console.log('we have projects data');
-  //   data.forEach(function(el){
-  //     new Thumbnail(el);
-  //   });
-  //   createGrid();
-  //   //console.log('hello hello');
-  // });
-
-  // loadData();
-  // load.load_data(data_path);
-
+  $("#filter-none").click(function(){
+    applyNoFilter();
+  });
 
 });
