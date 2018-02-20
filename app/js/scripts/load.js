@@ -11,7 +11,10 @@ var my_data = {
               $.getJSON(project_data_path,function(d){
                 my_data.populate_category_bar(d);
                 new Thumbnail(d);
-                if(create_categ_bar){my_data.create_category_bar(new_categ_object)};
+                if(create_categ_bar){
+                  my_data.create_category_bar(new_categ_object);
+                  // new Popup(d);
+                };
               })
             })();
           });

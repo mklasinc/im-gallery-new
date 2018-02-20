@@ -1,6 +1,6 @@
 //tag object class
 function TagButton(category,selector){
-  console.log('called',selector);
+  // console.log('called',selector);
     //every tag object has category and tag property
     this.ctg = category;
     this.tag = selector;

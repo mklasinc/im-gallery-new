@@ -48,7 +48,18 @@ function Thumbnail(project){
     htmlString += '<div class="meta-line">' + project.tags.semester + '</div></div>';
     htmlString += '</div> </div>';
 
-    $(htmlString).appendTo('#gallery-container');
+    var $my_el = $(htmlString).appendTo('#gallery-container');
+    create_click_handler($my_el,project);
+  }
+
+  function create_click_handler($el,project){
+    // $el = $(html_s);
+    $el.click(function(e){
+      console.log("clicked!");
+      console.log(project);
+
+      new Popup(project);
+    })
   }
 
   var metadata_string = create_metadata_string(project.tags);

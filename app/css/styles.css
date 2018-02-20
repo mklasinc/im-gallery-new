@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body{
+    width: 100%;
     padding-top:50px;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
+}
+
+.js-prevent-scrolling{
+  position: fixed !important;
 }
 
 #isotopeContainer{
@@ -51,6 +56,47 @@ ul li{
     margin: auto;
 }
 
+/*---------popup---------------*/
+#popup-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 100;
+    overflow: scroll;
+}
+
+.popup-window{
+    position: relative;
+    width: 80%;
+    padding:20px;
+    min-height: 300px;
+    background-color: red;
+    margin: 5vh auto 0 auto;
+}
+
+.popup-window__exit-button{
+    margin: 15px 10px 0 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.popup-window__title{
+  margin-top:0;
+}
+
+.popup-window__image--main{
+  max-width:100%;
+  overflow:hidden;
+  margin: 15px 0 15px 0;
+}
+
 
 /*---------MOBILE----------------*/
 .full-screen-overlay{
@@ -88,6 +134,7 @@ ul li{
   width:18px;
   height:18px;
 }
+
 
 ul li a, ul li a:focus {
   color:black !important;
@@ -179,8 +226,9 @@ a.pink-hover:hover{
     /* background-color: pink; */
     margin: 0 0 15px 0;
 }
+
 .hidden{
-  display:none;
+  display:none !important;
 }
 
 .overlay-project-name,.overlay-project-description, .overlay-project-tags{
