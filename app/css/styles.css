@@ -51,6 +51,7 @@ ul li{
 }
 
 #content-wrapper{
+      width: 85%;
   padding: 15px;
     max-width: 1200px;
     margin: auto;
@@ -70,16 +71,16 @@ ul li{
 
 .popup-window{
     position: relative;
-    width: 80%;
-    padding:20px;
+    max-width: 70%;
+    padding: 30px;
     min-height: 300px;
     background-color: white;
     margin: 5vh auto 0 auto;
 }
 
 .popup-window__exit-button{
-    margin: 15px 10px 0 0;
-    padding: 10px;
+    margin: 25px 15px 0 0;
+    padding: 15px;
     position: absolute;
     top: 0;
     right: 0;
@@ -95,6 +96,23 @@ ul li{
   max-width:100%;
   overflow:hidden;
   margin: 15px 0 15px 0;
+}
+
+
+.popup-window__video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.popup-window__video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -161,7 +179,7 @@ a.pink-hover:hover{
   background-color:pink;
 }
 
-.ctg.is-active,.tags.is-active{
+.ctg.is-active,.tag-is-active{
   background-color: purple !important;
   color:white !important;
   font-weight: bolder;
@@ -172,11 +190,12 @@ a.pink-hover:hover{
 }
 
 .tags {
+  margin: 0 0 5px 15px;
+  padding: 5px 10px;
     background-color: cyan;
     /*display: inline-block;*/
     /* float: left; */
-    padding: 5px 10px;
-    margin: 0 0 0 15px;
+
 }
 
 .tags.is-visible{
@@ -225,6 +244,11 @@ a.pink-hover:hover{
 #tags-bar {
     /* background-color: pink; */
     margin: 0 0 15px 0;
+}
+
+#active-tags-bar {
+    /* background-color: pink; */
+    margin-bottom: 20px;
 }
 
 .hidden{
@@ -350,7 +374,8 @@ a.pink-hover:hover{
 }
 
 .thumb {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    /* margin: 0 20px 15vh 20px; */
 }
 
 footer {

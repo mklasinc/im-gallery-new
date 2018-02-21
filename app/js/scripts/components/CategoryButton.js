@@ -1,18 +1,23 @@
-// CATEGORY CLASS
+// CATEGORY BUTTON CLASS
   function CategoryButton(selector){
-    this.ctg = selector;
+
+    // call these functions
+
+    createDomElement();
+
     //method to capitalize first letter of category name - used in createDomElement method
-    this.capitalizeFirstLetter = function(string){
+
+    function capitalizeFirstLetter(string){
       return string.charAt(0).toUpperCase() + string.slice(1);
-    };  
-    //DOM element method
-    this.createDomElement = function(){
-      //create HTML string
+    };
+
+    // method to create dom element for the given category
+
+    function createDomElement(){
       var htmlString = '';
       htmlString += '<li><a class="ctg not-active"';
-      htmlString += 'id=filter-' + this.ctg + '>' + this.capitalizeFirstLetter(this.ctg) + '</a></li>'; 
+      htmlString += 'id=filter-' + selector + '>' + capitalizeFirstLetter(selector) + '</a></li>';
       $(htmlString).prependTo('#filters');
     };
-    //push all the objects into an array******
-    categObjArray.push(this);
-  };
+  
+};

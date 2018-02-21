@@ -1,9 +1,21 @@
-// function
+// POPUP WINDOW CLASS
 function Popup(project,index){
 
-  console.log("new popup!");
+  // console.log("new popup!");
 
-  var create_html_element = function(d){
+  // variables
+  var $popup_wrapper = '#popup-wrapper';
+  var $exit_button = '.popup-window__exit-button';
+
+  // call these functions
+
+  create_html_element(project,$popup_wrapper);
+  exit_button_click_handler($exit_button,$popup_wrapper);
+  enable_window_scrolling(false);
+
+  // create popup element
+
+  function create_html_element(d){
 
     var first_img = 'data/projects/' + index.folder_name + '/img/' + index.img[0];
 
@@ -12,16 +24,24 @@ function Popup(project,index){
     html_string += '<img class="popup-window__exit-button" src="img/x-icon-black.png" />';
     html_string += '<section><h1 class="popup-window__title">' + d.title+ '</h1>';
     html_string += '<p class="popup-window__description--short">' + d.description.short + '</p></section>';
-    html_string += '<img class="popup-window__image--main" src="' + first_img + '" />';
+    // if there is a video show video first otherwise show image
+    if(d.video.length > 1){
+      html_string += '<div class="popup-window__video-container">';
+      html_string += '<iframe frameBorder="0" src="' + d.video +'"> </iframe></div>';
+    }else{
+      html_string += '<img class="popup-window__image--main" src="' + first_img + '" />';
+    };
     html_string += '<section><p class="popup-window__description--long">' + 'Lorem ipsum' + '</p></section>';
     html_string += '</div>';
 
-    console.log("apppending html string!");
-    $('#popup-wrapper').css("display","block");
+    // append popup window to the wrapper element
     $('#popup-wrapper').html(html_string);
+    $('#popup-wrapper').css("display","block");
   };
 
-  var enable_window_scrolling = function(scrolling_bool){
+  // enable/disable window scrolling
+
+  function enable_window_scrolling(scrolling_bool){
     if(scrolling_bool){
       $('body').removeClass("js-prevent-scrolling");
     }else{
@@ -29,17 +49,13 @@ function Popup(project,index){
     }
   }
 
-  var exit_button_click_handler = function(button,wrapper){
+  // set up the click handler for button wrapper
+
+  function exit_button_click_handler(button,wrapper){
       $(button).click(function(){
         $(wrapper).css("display","none");
         enable_window_scrolling(true);
     });
   }
-
-  let $popup_wrapper = '#popup-wrapper';
-  let $exit_button = '.popup-window__exit-button';
-  create_html_element(project,$popup_wrapper);
-  exit_button_click_handler($exit_button,$popup_wrapper);
-  enable_window_scrolling(false);
 
 }

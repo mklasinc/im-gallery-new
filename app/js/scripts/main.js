@@ -65,7 +65,7 @@ function createGrid(){
 /*----------------------------*/
 $(document).ready(function(){
 
-  
+
 
   my_data.load_data_from_index(index_path);
   $("#filter-none").click(function(){
