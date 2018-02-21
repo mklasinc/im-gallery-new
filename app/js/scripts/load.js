@@ -10,7 +10,7 @@ var my_data = {
               var create_categ_bar = id === data.length - 1 ? true : false;
               $.getJSON(project_data_path,function(d){
                 my_data.populate_category_bar(d);
-                new Thumbnail(d);
+                new Thumbnail(d,el);
                 if(create_categ_bar){
                   my_data.create_category_bar(new_categ_object);
                   // new Popup(d);
