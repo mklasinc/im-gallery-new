@@ -1,31 +1,19 @@
-//all the arrays
-var categTagList = ["mashups","other","digital","physical","health","data-visualization","music"];
-var categList = ["class","custom","tech"];
-var tagObjArray = [];
-var categObjArray = [];
+// //all the arrays
+// var categTagList = ["mashups","other","digital","physical","health","data-visualization","music"];
+// var categList = ["class","custom","tech"];
+// var tagObjArray = [];
+// var categObjArray = [];
 var $grid;
-var new_categ_list = [];
+// var new_categ_list = [];
 var new_categ_object = {};
-var new_tag_list = [];
-var new_obj_array = [];
-var test_category_bar;
+// var new_tag_list = [];
+// var new_obj_array = [];
+// var test_category_bar;
 // var data_path = '../data/project_data_all.json';
 var index_path = '../../data/projects/';
 
-
-
-//when you want to show all projects
-function applyNoFilter(filterName){
-  var selector = '#filter-' + filterName;
-  //console.log(selector);
-  $(selector).removeClass("toggle-click").find('.x-icon').addClass('hidden');
-  $grid.isotope({
-    // filter element with numbers greater than 50
-    filter: '*'
-  });
-};
-
 //method to create a grid with isotope
+
 function createGrid(){
   $grid = $('#gallery-container').isotope({
     itemSelector: '.thumb',
@@ -54,6 +42,7 @@ function createGrid(){
   });
 
   //load isotope images
+
   $grid.imagesLoaded().progress( function() {
     $grid.isotope('layout');
   });
@@ -65,11 +54,20 @@ function createGrid(){
 /*----------------------------*/
 $(document).ready(function(){
 
-
+  // load data, will populate the gallery thumbnails + create category and tag buttons
 
   my_data.load_data_from_index(index_path);
+
+  // click handler for the show-all button
+
   $("#filter-none").click(function(){
-    applyNoFilter();
+    Thumbnail.apply_no_filter();
+  });
+
+  // click handler for the yolo button
+
+  $("#filter-random").click(function(){
+    Thumbnail.random_sort();
   });
 
 });

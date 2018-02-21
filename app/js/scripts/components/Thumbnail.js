@@ -41,7 +41,7 @@ function Thumbnail(project,index){
         new Popup(project,index);
       });
     }
-    
+
 };
 
 
@@ -71,5 +71,12 @@ Thumbnail.apply_no_filter = function(){
   console.log("called!");
   $grid.isotope({
     filter: '*'
+  });
+};
+
+Thumbnail.random_sort = function(){
+  console.log("called!");
+  $grid.isotope({
+    sortBy : 'random'
   });
 };
