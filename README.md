@@ -4,3 +4,5 @@
 ## Built with
 * Bootstrap
 * [Isotope.js](http://isotope.metafizzy.co/) - Jquery plugin for sorting and filtering layouts
+
+## Adding projects to the Gallery page
