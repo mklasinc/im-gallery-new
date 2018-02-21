@@ -66,7 +66,7 @@ Use the structure below to populate `data.json` file. `description.short` is a o
 The project data folder can be found [here](https://github.com/NYUAD-IM/website/tree/master/gallery/data/projects). 
 
 ### 5. Updating `index.json` file
-The index file is found [here](https://github.com/NYUAD-IM/website/tree/master/gallery/data). The file acts like a map for ajax queries used to populate the gallery page, so you have to include your project data in the `index.json` file to have the project featured on the gallery page. Below you can find the indexing template. **Important**: Image names in the `img` array should match actual images in the `img` folder. Simply add the the index object to the `index.json` file, and, as long as you a) configured the index file correctly, b) set up the project folder structure correctly and c) placed the project folder in the right place, you should be fine.
+The index file is found [here](https://github.com/NYUAD-IM/website/tree/master/gallery/data). The file acts like a map for ajax queries used to populate the gallery page, so you have to include your project data in the `index.json` file to have the project featured on the gallery page. Below you can find the indexing template. **Important**: Image names in the `img` array should match actual images in the `img` folder. Simply add the the index object to the `index.json` file, and, as long as you a) configured the index file correctly, b) [set up the project folder structure](https://github.com/mklasinc/im-gallery-new/blob/master/README.md#2-creating-project-folder) correctly and c) placed the project folder in the [right place](https://github.com/NYUAD-IM/website/tree/master/gallery/data/projects), you should be fine.
 ```
 {
   "title":"My project name",
