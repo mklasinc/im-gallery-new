@@ -1,0 +1,17 @@
+{
+    "title": "My Project Title",
+    "authors":["author1","author2","author3"],
+    "description":{
+      "short":"My one line description",
+      "long":"long description(1 paragraph, max 2)"
+    },
+    "website":"https://www.project-website.com",
+    "images":["01.png","02.png","03.png"],
+    "video":"https://vimeo.com/user12345",
+    "tags":{
+       "course":"Intro to IM",
+       "semester":"Spring 2018",
+       "tech":"Physical",
+       "custom":["projection mapping","workshop"]
+    }
+}

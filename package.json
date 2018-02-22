@@ -1,0 +1,22 @@
+{
+  "name": "im-gallery-new",
+  "version": "1.0.0",
+  "description": "[Image gallery](http://gallery.nyuad.im/) showcasing work by Interactive Media students at NYU Abu Dhabi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklasinc/im-gallery-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mklasinc/im-gallery-new/issues"
+  },
+  "homepage": "https://github.com/mklasinc/im-gallery-new#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
